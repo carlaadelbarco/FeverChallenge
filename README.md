@@ -11,7 +11,7 @@
 
 After analyzing the requirements, the following solution has been developed, which can be visualized in the attached diagram:
 
-![Solution Diagram](path/to/image.png)
+![Solution Diagram](Images/LogicalView.png)
 
 ## Logical View of the Solution
 
@@ -30,13 +30,15 @@ A single microservice named `events` has been chosen, which manages two main pro
 
 The following sequence diagrams illustrate both processes:
 
-![Sequence Diagram](path/to/diagram.png)
+![Sequence Diagram](Images/Secuence1.png)
+![Sequence Diagram](Images/Secuence2.png)
+
 
 ## Hexagonal Architecture
 
 A hexagonal architecture has been adopted for the microservices, dividing the application into layers independent of each other. This structure separates business logic from the user interface and external infrastructure, facilitating maintenance and testing.
 
-![Hexagonal Architecture](path/to/architecture.png)
+![Hexagonal Architecture](Images/Hexagonal.png)
 
 ### Benefits of Hexagonal Architecture
 
@@ -63,7 +65,7 @@ A hexagonal architecture has been adopted for the microservices, dividing the ap
 
 Data from the external provider is stored in PostgreSQL, with all tables indexed to ensure optimal query performance.
 
-![Database Diagram](path/to/bbdd.png)
+![Database Diagram](Images/UML.png)
 
 ## Testing and Coverage with Jacoco
 
