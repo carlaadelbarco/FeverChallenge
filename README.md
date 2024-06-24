@@ -8,12 +8,11 @@
 - JUnit and Mockito
 
 ## Introduction
+## Logical View of the Solution
 
 After analyzing the requirements, the following solution has been developed, which can be visualized in the attached diagram:
 
 ![Solution Diagram](Images/LogicalView.png)
-
-## Logical View of the Solution
 
 A single microservice named `events` has been chosen, which manages two main processes:
 
@@ -71,7 +70,7 @@ Data from the external provider is stored in PostgreSQL, with all tables indexed
 
 Unit tests have been performed for all classes, achieving nearly 100% coverage. These tests were performed using JUnit and Mockito, and a coverage report was generated with Jacoco, available at `target/site/jacoco/index.html` after executing `mvn clean package`.
 
-![Coverage Report](path/to/jacoco.png)
+![Coverage Report](Images/Jacoco.png)
 
 ## Observability: Traceability and Monitoring
 
@@ -98,7 +97,9 @@ To test the application:
 
 Access Swagger to test the exposed endpoint at: `http://localhost:8080/swagger-ui/index.html`
 
-![Swagger UI](path/to/swagger.png)
+![Swagger UI](Images/Swagger1.png)
+![Swagger UI](Images/Swagger2.png)
+
 
 ## Next Steps
 
@@ -138,4 +139,3 @@ As the system grows, consider further decomposing the microservices to handle di
 
 The `swagger.yaml` file has been validated using [Swagger Editor](https://editor-next.swagger.io/).
 
-![Swagger Validation](path/to/swagger_validation.png)
