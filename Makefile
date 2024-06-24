@@ -1,14 +1,14 @@
-.PHONY: build run clean
+.PHONY: test build run clean
 
 test:
-        mvn clean test
+	mvn clean test
 
 build:
-		mvn clean package
+	mvn clean package
 
 run:
-		docker-compose up --build
+	docker-compose up --build
 
 clean:
-		docker-compose down
-		mvn clean
+	docker-compose down
+	mvn clean
