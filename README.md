@@ -1,5 +1,12 @@
 # Event Microservice Project
 
+## Stack used:
+- Java 17
+- Springboot 3.3.1
+- Swagger Open API : 3.0.0
+- PostgreSQL13 database
+- JUnit and Mockito
+
 ## Introduction
 
 After analyzing the requirements, the following solution has been developed, which can be visualized in the attached diagram:
